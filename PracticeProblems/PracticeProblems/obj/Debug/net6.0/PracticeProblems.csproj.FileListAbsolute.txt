@@ -1,0 +1,15 @@
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\bin\Debug\net6.0\PracticeProblems.exe
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\bin\Debug\net6.0\PracticeProblems.deps.json
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\bin\Debug\net6.0\PracticeProblems.runtimeconfig.json
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\bin\Debug\net6.0\PracticeProblems.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\bin\Debug\net6.0\PracticeProblems.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.csproj.AssemblyReference.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.AssemblyInfoInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.AssemblyInfo.cs
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.csproj.CoreCompileInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\refint\PracticeProblems.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\PracticeProblems.genruntimeconfig.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\PracticeProblems\PracticeProblems\obj\Debug\net6.0\ref\PracticeProblems.dll
