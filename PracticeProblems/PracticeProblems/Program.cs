@@ -20,9 +20,15 @@ using System.Xml.Linq;
 //Animal d = new Dog();
 //Console.WriteLine(d.color);
 
+//Shape s;
+//s = new Shape();
+//s.draw();
+//s = new Rectangle();
+//s.draw();
+//s = new Circle();
+//s.draw();
+
 Shape s;
-s = new Shape();
-s.draw();
 s = new Rectangle();
 s.draw();
 s = new Circle();
