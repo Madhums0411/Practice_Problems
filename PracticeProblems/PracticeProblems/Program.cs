@@ -37,12 +37,28 @@ using System.Xml.Linq;
 //s.draw();
 
 //Encapsulation
-Student student = new Student();
-// Setting values to the properties  
-student.ID = "101";
-student.Name = "Mohan Ram";
-student.Email = "mohan@example.com";
-// getting values  
-Console.WriteLine("ID = " + student.ID);
-Console.WriteLine("Name = " + student.Name);
-Console.WriteLine("Email = " + student.Email);
+//Student student = new Student();
+//// Setting values to the properties  
+//student.ID = "101";
+//student.Name = "Mohan Ram";
+//student.Email = "mohan@example.com";
+//// getting values  
+//Console.WriteLine("ID = " + student.ID);
+//Console.WriteLine("Name = " + student.Name);
+//Console.WriteLine("Email = " + student.Email);
+
+//List
+{
+    // Create a list of strings  
+    var names = new List<string>();
+    names.Add("Madhu");
+    names.Add("Puni");
+    names.Add("Chethu");
+    names.Add("Abhi");
+
+    // Iterate list element using foreach loop  
+    foreach (var name in names)
+    {
+        Console.WriteLine(name);
+    }
+}
