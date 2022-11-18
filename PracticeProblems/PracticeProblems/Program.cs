@@ -3,6 +3,7 @@
 using PracticeProblems;
 using System.Net;
 using System.Xml.Linq;
+using System.Collections.Generic;
 
 
 //Inheritance
@@ -48,17 +49,38 @@ using System.Xml.Linq;
 //Console.WriteLine("Email = " + student.Email);
 
 //List
-{
-    // Create a list of strings  
-    var names = new List<string>();
-    names.Add("Madhu");
-    names.Add("Puni");
-    names.Add("Chethu");
-    names.Add("Abhi");
+//{
+//    // Create a list of strings  
+//    var names = new List<string>();
+//    names.Add("Madhu");
+//    names.Add("Puni");
+//    names.Add("Chethu");
+//    names.Add("Abhi");
 
-    // Iterate list element using foreach loop  
-    foreach (var name in names)
+//    // Iterate list element using foreach loop  
+//    foreach (var name in names)
+//    {
+//        Console.WriteLine(name);
+//    }
+//}
+
+
+//Stack
+{
+    Stack<string> names = new Stack<string>();
+    names.Push("Madhu");
+    names.Push("Puni");
+    names.Push("Abhi");
+    names.Push("Chethan");
+    names.Push("Akash");
+
+    foreach (string name in names)
     {
         Console.WriteLine(name);
     }
+
+    Console.WriteLine("Peek element: " + names.Peek());
+    Console.WriteLine("Pop: " + names.Pop());
+    Console.WriteLine("After Pop, Peek element: " + names.Peek());
+
 }
