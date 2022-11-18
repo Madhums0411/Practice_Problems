@@ -5,7 +5,7 @@ using System.Net;
 using System.Xml.Linq;
 
 
-////Inheritance
+//Inheritance
 //Programmer p1 = new Programmer();
 
 //Console.WriteLine("Salary: " + p1.salary);
@@ -28,8 +28,21 @@ using System.Xml.Linq;
 //s = new Circle();
 //s.draw();
 
-Shape s;
-s = new Rectangle();
-s.draw();
-s = new Circle();
-s.draw();
+
+////abstract
+//Shape s;
+//s = new Rectangle();
+//s.draw();
+//s = new Circle();
+//s.draw();
+
+//Encapsulation
+Student student = new Student();
+// Setting values to the properties  
+student.ID = "101";
+student.Name = "Mohan Ram";
+student.Email = "mohan@example.com";
+// getting values  
+Console.WriteLine("ID = " + student.ID);
+Console.WriteLine("Name = " + student.Name);
+Console.WriteLine("Email = " + student.Email);
