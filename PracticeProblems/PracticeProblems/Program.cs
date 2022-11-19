@@ -86,20 +86,37 @@ using System.Collections.Generic;
 //}
 
 //Queue
-{
-    Queue<string> names = new Queue<string>();
-    names.Enqueue("Madhu");
-    names.Enqueue("Puni");
-    names.Enqueue("Abhi");
-    names.Enqueue("Chethan");
-    names.Enqueue("Akash");    
+//{
+//    Queue<string> names = new Queue<string>();
+//    names.Enqueue("Madhu");
+//    names.Enqueue("Puni");
+//    names.Enqueue("Abhi");
+//    names.Enqueue("Chethan");
+//    names.Enqueue("Akash");    
 
-    foreach (string name in names)
+//    foreach (string name in names)
+//    {
+//        Console.WriteLine(name);
+//    }
+
+//    Console.WriteLine("Peek element: " + names.Peek());
+//    Console.WriteLine("Dequeue: " + names.Dequeue());
+//    Console.WriteLine("After Dequeue, Peek element: " + names.Peek());
+//}
+
+//Linked list
+{
+    // Create a list of strings  
+    var names = new LinkedList<string>();
+    names.AddLast("Sonoo Jaiswal");
+    names.AddLast("Ankit");
+    names.AddLast("Peter");
+    names.AddLast("Irfan");
+    names.AddFirst("John");//added to first index  
+
+    // Iterate list element using foreach loop  
+    foreach (var name in names)
     {
         Console.WriteLine(name);
     }
-
-    Console.WriteLine("Peek element: " + names.Peek());
-    Console.WriteLine("Dequeue: " + names.Dequeue());
-    Console.WriteLine("After Dequeue, Peek element: " + names.Peek());
 }
