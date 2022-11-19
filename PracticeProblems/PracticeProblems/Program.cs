@@ -66,13 +66,33 @@ using System.Collections.Generic;
 
 
 //Stack
+//{
+//    Stack<string> names = new Stack<string>();
+//    names.Push("Madhu");
+//    names.Push("Puni");
+//    names.Push("Abhi");
+//    names.Push("Chethan");
+//    names.Push("Akash");
+
+//    foreach (string name in names)
+//    {
+//        Console.WriteLine(name);
+//    }
+
+//    Console.WriteLine("Peek element: " + names.Peek());
+//    Console.WriteLine("Pop: " + names.Pop());
+//    Console.WriteLine("After Pop, Peek element: " + names.Peek());
+
+//}
+
+//Queue
 {
-    Stack<string> names = new Stack<string>();
-    names.Push("Madhu");
-    names.Push("Puni");
-    names.Push("Abhi");
-    names.Push("Chethan");
-    names.Push("Akash");
+    Queue<string> names = new Queue<string>();
+    names.Enqueue("Madhu");
+    names.Enqueue("Puni");
+    names.Enqueue("Abhi");
+    names.Enqueue("Chethan");
+    names.Enqueue("Akash");    
 
     foreach (string name in names)
     {
@@ -80,7 +100,6 @@ using System.Collections.Generic;
     }
 
     Console.WriteLine("Peek element: " + names.Peek());
-    Console.WriteLine("Pop: " + names.Pop());
-    Console.WriteLine("After Pop, Peek element: " + names.Peek());
-
+    Console.WriteLine("Dequeue: " + names.Dequeue());
+    Console.WriteLine("After Dequeue, Peek element: " + names.Peek());
 }
