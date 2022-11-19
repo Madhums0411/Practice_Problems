@@ -105,18 +105,31 @@ using System.Collections.Generic;
 //}
 
 //Linked list
-{
-    // Create a list of strings  
-    var names = new LinkedList<string>();
-    names.AddLast("Sonoo Jaiswal");
-    names.AddLast("Ankit");
-    names.AddLast("Peter");
-    names.AddLast("Irfan");
-    names.AddFirst("John");//added to first index  
+//{
+//    // Create a list of strings  
+//    var names = new LinkedList<string>();
+//    names.AddLast("Madhu");
+//    names.AddLast("Abhi");
+//    names.AddLast("Puni");
+//    names.AddLast("Akash");
+//    names.AddFirst("Chethu");//added to first index  
 
-    // Iterate list element using foreach loop  
-    foreach (var name in names)
-    {
-        Console.WriteLine(name);
-    }
+//    // Iterate list element using foreach loop  
+//    foreach (var name in names)
+//    {
+//        Console.WriteLine(name);
+//    }
+//}
+
+//Generics
+{
+    GenericClass<string> Name = new GenericClass<string>("Madhu");
+    GenericClass<int> number = new GenericClass<int>(411);
+    GenericClass<char> character = new GenericClass<char>('R');
+}
+{
+    GenericClass clas = new GenericClass();
+    clas.Show("Madhu");
+    clas.Show(411);
+    clas.Show('R');
 }
