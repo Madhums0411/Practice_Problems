@@ -4,6 +4,7 @@ using PracticeProblems;
 using System.Net;
 using System.Xml.Linq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 
 //Inheritance
@@ -136,15 +137,37 @@ using System.Collections.Generic;
 
 //Exceptions
 
-{
-    try
-    {
-        int a = 10;
-        int b = 0;
-        int x = a / b;
-    }
-    catch (Exception e) { Console.WriteLine(e); }
+//{
+//    try
+//    {
+//        int a = 10;
+//        int b = 0;
+//        int x = a / b;
+//    }
+//    catch (Exception e) { Console.WriteLine(e); }
 
-    finally { Console.WriteLine("Finally block is executed"); }
-    Console.WriteLine("Rest of the code");
+//    finally { Console.WriteLine("Finally block is executed"); }
+//    Console.WriteLine("Rest of the code");
+//}
+
+
+//Regular Expression
+try
+{
+    Console.WriteLine("Enter Name: ");
+    string name = Console.ReadLine();
+    string pattrn = "^[A-Z]{1,}[A-Za-z]{7,}$";
+    if (Regex.IsMatch(name, pattrn))
+    {
+        Console.WriteLine("valid name " + name);
+    }
+    else
+    {
+        Console.WriteLine("not valid");
+    };
+
+}
+catch (Exception)
+{
+    throw;
 }
