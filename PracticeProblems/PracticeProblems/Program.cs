@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 
+
 //Inheritance
 //Programmer p1 = new Programmer();
 
@@ -173,16 +174,17 @@ using System.Text.RegularExpressions;
 //}
 
 //Dictionary
-{
-    Dictionary<string, string> names = new Dictionary<string, string>();
-    names.Add("1", "Madhu");
-    names.Add("2", "Puni");
-    names.Add("3", "Abhi");
-    names.Add("4", "Chethu");
-    names.Add("5", "Akash");
+//{
+//    Dictionary<string, string> names = new Dictionary<string, string>();
+//    names.Add("1", "Madhu");
+//    names.Add("2", "Puni");
+//    names.Add("3", "Abhi");
+//    names.Add("4", "Chethu");
+//    names.Add("5", "Akash");
 
-    foreach (KeyValuePair<string, string> kv in names)
-    {
-        Console.WriteLine(kv.Key + " " + kv.Value);
-    }
-}
+//    foreach (KeyValuePair<string, string> kv in names)
+//    {
+//        Console.WriteLine(kv.Key + " " + kv.Value);
+//    }
+//}
+
