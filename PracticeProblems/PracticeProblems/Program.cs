@@ -152,22 +152,37 @@ using System.Text.RegularExpressions;
 
 
 //Regular Expression
-try
-{
-    Console.WriteLine("Enter Name: ");
-    string name = Console.ReadLine();
-    string pattrn = "^[A-Z]{1,}[A-Za-z]{7,}$";
-    if (Regex.IsMatch(name, pattrn))
-    {
-        Console.WriteLine("valid name " + name);
-    }
-    else
-    {
-        Console.WriteLine("not valid");
-    };
+//try
+//{
+//    Console.WriteLine("Enter Name: ");
+//    string name = Console.ReadLine();
+//    string pattrn = "^[A-Z]{1,}[A-Za-z]{7,}$";
+//    if (Regex.IsMatch(name, pattrn))
+//    {
+//        Console.WriteLine("valid name " + name);
+//    }
+//    else
+//    {
+//        Console.WriteLine("not valid");
+//    };
 
-}
-catch (Exception)
+//}
+//catch (Exception)
+//{
+//    throw;
+//}
+
+//Dictionary
 {
-    throw;
+    Dictionary<string, string> names = new Dictionary<string, string>();
+    names.Add("1", "Madhu");
+    names.Add("2", "Puni");
+    names.Add("3", "Abhi");
+    names.Add("4", "Chethu");
+    names.Add("5", "Akash");
+
+    foreach (KeyValuePair<string, string> kv in names)
+    {
+        Console.WriteLine(kv.Key + " " + kv.Value);
+    }
 }
