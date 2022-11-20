@@ -122,14 +122,29 @@ using System.Collections.Generic;
 //}
 
 //Generics
+//{
+//    GenericClass<string> Name = new GenericClass<string>("Madhu");
+//    GenericClass<int> number = new GenericClass<int>(411);
+//    GenericClass<char> character = new GenericClass<char>('R');
+//}
+//{
+//    GenericClass clas = new GenericClass();
+//    clas.Show("Madhu");
+//    clas.Show(411);
+//    clas.Show('R');
+//}
+
+//Exceptions
+
 {
-    GenericClass<string> Name = new GenericClass<string>("Madhu");
-    GenericClass<int> number = new GenericClass<int>(411);
-    GenericClass<char> character = new GenericClass<char>('R');
-}
-{
-    GenericClass clas = new GenericClass();
-    clas.Show("Madhu");
-    clas.Show(411);
-    clas.Show('R');
+    try
+    {
+        int a = 10;
+        int b = 0;
+        int x = a / b;
+    }
+    catch (Exception e) { Console.WriteLine(e); }
+
+    finally { Console.WriteLine("Finally block is executed"); }
+    Console.WriteLine("Rest of the code");
 }
