@@ -16,7 +16,7 @@ namespace AddressBook.Controllers
         {
             this.addressBL = addressBL;
         }
-        [HttpPost("create")]
+        [HttpPost("Create")]
         public IActionResult CreateAddressBook(AddressBookModel model)
         {
             try
@@ -63,7 +63,6 @@ namespace AddressBook.Controllers
         {
             try
             {
-                //long UserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "Id").Value);
                 var result = addressBL.UpdateAddressBook(Id, model);
                 if (result != null)
                 {
@@ -78,8 +77,20 @@ namespace AddressBook.Controllers
             {
                 throw;
             }
+        }
 
-
+        [HttpDelete("Delete")]
+        public IActionResult DeleteAddressBook(long Id)
+        {
+            var result = addressBL.DeleteAddressBook(Id);
+            if (result != null)
+            {
+                return Ok(new { success = true, message = "Address Book Deleted Successfully" });
+            }
+            else
+            {
+                return BadRequest(new { success = false, message = "Unsuccessfull" });
+            }
         }
     }
 }

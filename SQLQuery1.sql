@@ -51,3 +51,12 @@ as
 begin
 update AddressBook set FirstName=@FirstName, LastName=@LastName, Email=@Email, Mobile=@Mobile, Address=@Address, City=@City, State=@State, Pincode=@Pincode where Id=@Id;
 end
+
+
+create procedure DeleteAddressBook(
+@Id int
+)
+as
+begin
+delete from AddressBook where Id=@Id;
+end

@@ -112,5 +112,30 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
+        public bool DeleteAddressBook(long Id)
+        {
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            try
+            {
+                SqlCommand command = new SqlCommand("DeleteAddressBook", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@Id", Id);
+                connection.Open();
+                var result = command.ExecuteNonQuery();
+                connection.Close();
+                if (result != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

@@ -49,6 +49,16 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
-
+        public bool DeleteAddressBook(long Id)
+        {
+            try
+            {
+                return addressRL.DeleteAddressBook(Id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
  }
