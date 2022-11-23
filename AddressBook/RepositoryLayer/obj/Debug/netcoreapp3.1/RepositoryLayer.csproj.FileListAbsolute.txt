@@ -1,0 +1,13 @@
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.deps.json
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.AssemblyReference.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CopyComplete
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb

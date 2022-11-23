@@ -188,3 +188,23 @@ using System.Text.RegularExpressions;
 //    }
 //}
 
+
+//Lamda
+
+List<Person> listPersonInCity = new List<Person>();
+Lambda.AddRecords(listPersonInCity);
+Lambda.Retrieving_TopTwoRecord_ForAgels_LessThanSixty(listPersonInCity);
+Lambda.CheckingForTeenagerPerson(listPersonInCity);
+Lambda.AllPersonsAverageAge(listPersonInCity);
+Lambda.CheckNameExistOrNot(listPersonInCity);
+
+
+
+
+
+
+//{
+//    FileStream f = new FileStream("E:\\b.txt", FileMode.OpenOrCreate);//creating file stream  
+//    f.WriteByte(65);//writing byte into stream  
+//    f.Close();//closing stream  
+//}

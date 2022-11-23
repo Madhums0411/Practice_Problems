@@ -1,0 +1,15 @@
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CopyComplete
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
