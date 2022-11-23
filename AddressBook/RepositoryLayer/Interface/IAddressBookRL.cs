@@ -8,5 +8,6 @@ namespace RepositoryLayer.Interface
     public interface IAddressBookRL
     {
         public AddressBookModel CreateAddressBook(AddressBookModel model);
+        public List<GetAddressBookModel> GetAddressBook();
     }
 }

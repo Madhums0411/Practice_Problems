@@ -7,15 +7,15 @@ using System.Text;
 
 namespace BusinessLayer.Service
 {
-        public class AddressBookBL : IAddressBookBL
-        {
-            public IAddressBookRL addressRL;
-            public AddressBookBL(IAddressBookRL addressRL)
+     public class AddressBookBL : IAddressBookBL
+     {
+        public IAddressBookRL addressRL;
+        public AddressBookBL(IAddressBookRL addressRL)
             {
                 this.addressRL = addressRL;
             }
 
-            public AddressBookModel CreateAddressBook(AddressBookModel model)
+        public AddressBookModel CreateAddressBook(AddressBookModel model)
             {
                 try
                 {
@@ -26,5 +26,17 @@ namespace BusinessLayer.Service
                     throw;
                 }
             }
+        public List<GetAddressBookModel> GetAddressBook()
+        {
+            try
+            {
+                return addressRL.GetAddressBook();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
+
+     }
  }
