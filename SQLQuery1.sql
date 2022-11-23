@@ -28,3 +28,26 @@ as
 begin
 insert into AddressBook values(@FirstName,@LastName,@Email,@Mobile,@Address,@City,@State,@Pincode)
 end
+Select * from AddressBook
+
+create procedure getAddressBook
+as
+begin
+select * from AddressBook
+end
+
+create procedure UpdateAddressBook(
+@Id int,
+@FirstName varchar(100),
+@LastName varchar(100),
+@Email varchar(100),
+@Mobile varchar(100),
+@Address varchar(100),
+@City varchar(100),
+@State varchar(100),
+@Pincode varchar(100)
+)
+as
+begin
+update AddressBook set FirstName=@FirstName, LastName=@LastName, Email=@Email, Mobile=@Mobile, Address=@Address, City=@City, State=@State, Pincode=@Pincode where Id=@Id;
+end

@@ -57,5 +57,29 @@ namespace AddressBook.Controllers
                 throw;
             }
         }
+
+        [HttpPut("Update")]
+        public IActionResult UpdateAddressBook(long Id, AddressBookModel model)
+        {
+            try
+            {
+                //long UserId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "Id").Value);
+                var result = addressBL.UpdateAddressBook(Id, model);
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "Address Book Updated Successfully", data = result });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "Unsuccessfull" });
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+
+        }
     }
 }

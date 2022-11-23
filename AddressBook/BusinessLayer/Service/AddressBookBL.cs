@@ -38,5 +38,17 @@ namespace BusinessLayer.Service
             }
         }
 
-     }
+        public AddressBookModel UpdateAddressBook(long Id, AddressBookModel model)
+        {
+            try
+            {
+                return addressRL.UpdateaddressBook(Id, model);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+    }
  }
