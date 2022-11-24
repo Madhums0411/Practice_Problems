@@ -33,6 +33,8 @@ namespace AddressBook
             services.AddControllers();
             services.AddTransient<IAddressBookRL, AddressBookRL>();
             services.AddTransient<IAddressBookBL, AddressBookBL>();
+            services.AddTransient<IUserBL, UserBL>();
+            services.AddTransient<IUserRL, UserRL>();
 
             services.AddSwaggerGen();
             services.AddSwaggerGen(c =>
@@ -46,7 +48,7 @@ namespace AddressBook
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
