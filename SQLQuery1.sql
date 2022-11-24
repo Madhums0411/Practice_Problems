@@ -85,3 +85,11 @@ as
 begin
 insert into UserTable values(@FirstName,@LastName,@Email,@Password)
 end
+
+alter procedure Userlogin(
+@Email varchar(100)
+)
+as
+begin
+select * from UserTable where Email=@Email;
+end
