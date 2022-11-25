@@ -31,7 +31,7 @@ namespace RepositoryLayer.Service
                 command.Parameters.AddWithValue("@FirstName", userRegister.FirstName);
                 command.Parameters.AddWithValue("@LastName", userRegister.LastName);
                 command.Parameters.AddWithValue("@Email", userRegister.Email);
-                command.Parameters.AddWithValue("@Password", EncryptPassword(userRegister.Password));
+                command.Parameters.AddWithValue("@Password", Encrypt(userRegister.Password));
                 connection.Open();
                 var result = command.ExecuteNonQuery();
                 connection.Close();
@@ -61,8 +61,20 @@ namespace RepositoryLayer.Service
                 cmd.Parameters.AddWithValue("@Email", userLogin.Email);
                 sqlConnection.Open();
                 var result = cmd.ExecuteNonQuery();
+                // sqlConnection.Close();
+                SqlDataReader Dr = cmd.ExecuteReader();
+                while (Dr.Read())
+                {
+                    string Name = Convert.ToString(Dr["FirstName"]);
+                    string Email = Convert.ToString(Dr["Email"]);
+                    Id = Convert.ToInt32(Dr["Id"]);
+                    Password = Convert.ToString(Dr["Password"]);
+
+
+                }
                 sqlConnection.Close();
-                var pass = Password;
+                var pass = Decrypt(Password);
+                // var email = userLogin.Email;
                 if (pass == userLogin.Password)
                 {
 
@@ -82,6 +94,7 @@ namespace RepositoryLayer.Service
         {
             try
             {
+                // generate token
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenKey = Encoding.ASCII.GetBytes("ThisismySecretKey");
                 var tokenDescriptor = new SecurityTokenDescriptor
@@ -118,16 +131,15 @@ namespace RepositoryLayer.Service
                 cmd.Parameters.AddWithValue("@Email", Email);
                 connection.Open();
                 var result = cmd.ExecuteNonQuery();
-                //SqlDataReader sqlData = cmd.ExecuteReader();
-                UserModel userModel = new UserModel();
-                //if (sqlData.Read())
-                //{
-                //    //userModel.Id = sqlData.GetInt32("Id");
-                //    userModel.Email = sqlData.GetString("Email");
-                //    //userModel.FirstName = sqlData.GetString("FirstName");
-                //    //userModel.LastName = sqlData.GetString("LastName");
-                //}
-                if (userModel.Email != null)
+                SqlDataReader sqlData = cmd.ExecuteReader();
+                UserModel userRegisterModels = new UserModel();
+                if (sqlData.Read())
+                {
+
+                    userRegisterModels.Email = sqlData.GetString("Email");
+
+                }
+                if (userRegisterModels.Email != null)
                 {
                     MSMQModel mSMQModel = new MSMQModel();
                     var token = GenerateJWTToken(Email, Id);
@@ -144,24 +156,14 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
-        public bool ResetPassword(string Email, ResetModel resetModel)
+        public bool ResetPassword(string Password, string ConfirmPassword)
         {
-            SqlConnection connection = new SqlConnection(ConnectionString);
             try
             {
-                SqlCommand cmd = new SqlCommand("SpResetPassword", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                connection.Open();
-                var result = cmd.ExecuteNonQuery();
-                connection.Close();
-                if (resetModel.Password == resetModel.ConfirmPassword)
+                if (Password.Equals(ConfirmPassword))
                 {
-                    cmd.Parameters.AddWithValue("@Email", Email);
-                    cmd.Parameters.AddWithValue("@Password", resetModel.Password);
-                }
+                    Password = Password;
 
-                if (result != 0)
-                {
                     return true;
                 }
                 else
@@ -171,21 +173,22 @@ namespace RepositoryLayer.Service
             }
             catch (Exception)
             {
+
                 throw;
             }
         }
-        public string EncryptPassword(string password)
+        public string Encrypt(string password)
         {
             if (string.IsNullOrEmpty(password)) return "";
             password += "";
             var passwordBytes = Encoding.UTF8.GetBytes(password);
             return Convert.ToBase64String(passwordBytes);
         }
-        public string Decrypt(string base64EncodedData)
+        public string Decrypt(string base64EncodeData)
         {
-            if (string.IsNullOrEmpty(base64EncodedData)) return "";
-            var base64EncodeBytes = Convert.FromBase64String(base64EncodedData);
-            var result = Encoding.UTF8.GetString(base64EncodeBytes);
+            if (string.IsNullOrEmpty(base64EncodeData)) return "";
+            var base64EncoddeBytes = Convert.FromBase64String(base64EncodeData);
+            var result = Encoding.UTF8.GetString(base64EncoddeBytes);
             result = result.Substring(0, result.Length);
             return result;
         }

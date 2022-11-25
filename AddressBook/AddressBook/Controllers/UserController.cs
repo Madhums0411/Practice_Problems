@@ -78,12 +78,12 @@ namespace AddressBook.Controllers
             }
         }
         [HttpPost("Reset")]
-        public IActionResult ResetPassword(string Email,ResetModel resetModel)
+        public ActionResult ResetPassword(string Password, string ConfirmPassword)
         {
             try
             {
-                var result = userBL.ResetPassword(Email, resetModel);
-                if (result != null)
+                
+                if (userBL.ResetPassword(Password, ConfirmPassword))
                 {
                     return Ok(new { success = true, message = "Password reseted successfully"});
                 }

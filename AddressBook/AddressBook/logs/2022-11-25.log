@@ -1,0 +1,89 @@
+2022-11-25 20:50:32.7176 DEBUG Hosting starting
+2022-11-25 20:50:32.9899 INFO User profile is available. Using 'C:\Users\Madhu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-25 20:50:33.0146 DEBUG Reading data from file 'C:\Users\Madhu\AppData\Local\ASP.NET\DataProtection-Keys\key-9d9324cd-2cbc-4aff-b712-5256d7176e7e.xml'.
+2022-11-25 20:50:33.0329 DEBUG Found key {9d9324cd-2cbc-4aff-b712-5256d7176e7e}.
+2022-11-25 20:50:33.0597 DEBUG Considering key {9d9324cd-2cbc-4aff-b712-5256d7176e7e} with expiration date 2023-01-01 17:40:34Z as default key.
+2022-11-25 20:50:33.2778 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.29.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-11-25 20:50:33.2778 DEBUG Decrypting secret element using Windows DPAPI.
+2022-11-25 20:50:33.2778 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.29.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-11-25 20:50:33.3266 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2022-11-25 20:50:33.3266 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2022-11-25 20:50:33.3442 DEBUG Using key {9d9324cd-2cbc-4aff-b712-5256d7176e7e} as the default key.
+2022-11-25 20:50:33.3442 DEBUG Key ring with default key {9d9324cd-2cbc-4aff-b712-5256d7176e7e} was loaded during application startup.
+2022-11-25 20:50:34.5092 DEBUG Loaded hosting startup assembly AddressBook
+2022-11-25 20:50:34.5092 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-25 20:50:34.5092 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-25 20:50:34.5092 INFO Application started. Press Ctrl+C to shut down.
+2022-11-25 20:50:34.5092 INFO Hosting environment: Development
+2022-11-25 20:50:34.5092 INFO Content root path: C:\Users\Madhu\Desktop\CFP-193\Practice\AddressBook\AddressBook
+2022-11-25 20:50:34.5092 DEBUG Hosting started
+2022-11-25 20:50:34.8889 INFO Request starting HTTP/2.0 GET https://localhost:44306/swagger/index.html  
+2022-11-25 20:50:35.0396 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2022-11-25 20:50:35.0396 TRACE All hosts are allowed.
+2022-11-25 20:50:35.1391 DEBUG No candidates found for the request path '/swagger/index.html'
+2022-11-25 20:50:35.1391 DEBUG Request did not match any endpoints
+2022-11-25 20:50:35.3892 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2022-11-25 20:50:35.5941 DEBUG Response markup is scheduled to include browser refresh script injection.
+2022-11-25 20:50:36.0189 DEBUG Response markup was updated to include browser refresh script injection.
+2022-11-25 20:50:36.0428 INFO Request starting HTTP/2.0 GET https://localhost:44306/_framework/aspnetcore-browser-refresh.js  
+2022-11-25 20:50:36.0653 INFO Request finished in 1147.3886ms 200 text/html;charset=utf-8
+2022-11-25 20:50:36.0836 INFO Request finished in 14.142ms 200 application/javascript; charset=utf-8
+2022-11-25 20:50:36.3387 INFO Request starting HTTP/2.0 GET https://localhost:44306/_vs/browserLink  
+2022-11-25 20:50:36.5556 INFO Request finished in 216.8923ms 200 text/javascript; charset=UTF-8
+2022-11-25 20:50:36.9415 INFO Request starting HTTP/2.0 GET https://localhost:44306/swagger/v1/swagger.json  
+2022-11-25 20:50:36.9415 TRACE All hosts are allowed.
+2022-11-25 20:50:36.9415 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2022-11-25 20:50:36.9509 DEBUG Request did not match any endpoints
+2022-11-25 20:50:36.9509 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2022-11-25 20:50:37.3863 INFO Request finished in 445.2691ms 200 application/json;charset=utf-8
+2022-11-25 20:50:56.9962 INFO Request starting HTTP/2.0 POST https://localhost:44306/api/AddressBook/Create application/json 186
+2022-11-25 20:50:56.9962 TRACE All hosts are allowed.
+2022-11-25 20:50:57.0158 DEBUG 1 candidate(s) found for the request path '/api/AddressBook/Create'
+2022-11-25 20:50:57.0158 DEBUG Endpoint 'AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook)' with route pattern 'api/AddressBook/Create' is valid for the request path '/api/AddressBook/Create'
+2022-11-25 20:50:57.0158 DEBUG Request matched endpoint 'AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook)'
+2022-11-25 20:50:57.0158 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2022-11-25 20:50:57.0280 INFO Executing endpoint 'AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook)'
+2022-11-25 20:50:57.0674 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2022-11-25 20:50:57.1467 INFO Route matched with {action = "CreateAddressBook", controller = "AddressBook"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateAddressBook(CommonLayer.Model.AddressBookModel) on controller AddressBook.Controllers.AddressBookController (AddressBook).
+2022-11-25 20:50:57.1467 DEBUG Execution plan of authorization filters (in the following order): None
+2022-11-25 20:50:57.1467 DEBUG Execution plan of resource filters (in the following order): None
+2022-11-25 20:50:57.1467 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-11-25 20:50:57.1467 DEBUG Execution plan of exception filters (in the following order): None
+2022-11-25 20:50:57.1467 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-11-25 20:50:57.1467 DEBUG Executing controller factory for controller AddressBook.Controllers.AddressBookController (AddressBook)
+2022-11-25 20:50:57.1523 DEBUG Executed controller factory for controller AddressBook.Controllers.AddressBookController (AddressBook)
+2022-11-25 20:50:57.1523 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.Model.AddressBookModel' ...
+2022-11-25 20:50:57.1675 DEBUG Attempting to bind parameter 'model' of type 'CommonLayer.Model.AddressBookModel' using the name '' in request data ...
+2022-11-25 20:50:57.1675 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-11-25 20:50:57.1834 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.AddressBookModel'
+2022-11-25 20:50:57.1834 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.Model.AddressBookModel'.
+2022-11-25 20:50:57.1834 DEBUG Done attempting to bind parameter 'model' of type 'CommonLayer.Model.AddressBookModel'.
+2022-11-25 20:50:57.1834 DEBUG Attempting to validate the bound parameter 'model' of type 'CommonLayer.Model.AddressBookModel' ...
+2022-11-25 20:50:57.1834 DEBUG Done attempting to validate the bound parameter 'model' of type 'CommonLayer.Model.AddressBookModel'.
+2022-11-25 20:50:57.1834 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-11-25 20:50:57.1834 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-11-25 20:50:57.1834 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-11-25 20:50:57.1834 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-11-25 20:50:57.2037 INFO Executing action method AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook) - Validation state: Valid
+2022-11-25 20:50:57.2037 TRACE Executing action method AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook) with arguments (CommonLayer.Model.AddressBookModel)
+2022-11-25 20:50:57.6715 INFO  AddressBook Created
+2022-11-25 20:50:57.6882 INFO Executed action method AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 468.3189ms.
+2022-11-25 20:50:57.6882 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-11-25 20:50:57.6882 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-11-25 20:50:57.6882 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-11-25 20:50:57.6882 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-11-25 20:50:57.6882 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-11-25 20:50:57.6882 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-11-25 20:50:57.6882 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-11-25 20:50:57.6882 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-11-25 20:50:57.6995 DEBUG No information found on request to perform content negotiation.
+2022-11-25 20:50:57.6995 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-25 20:50:57.6995 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-25 20:50:57.6995 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-25 20:50:57.6995 INFO Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CommonLayer.Model.AddressBookModel, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-25 20:50:57.6995 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-11-25 20:50:57.6995 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-11-25 20:50:57.6995 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-11-25 20:50:57.7211 INFO Executed action AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook) in 564.5875ms
+2022-11-25 20:50:57.7211 INFO Executed endpoint 'AddressBook.Controllers.AddressBookController.CreateAddressBook (AddressBook)'
+2022-11-25 20:50:57.7211 INFO Request finished in 726.0001ms 200 application/json; charset=utf-8

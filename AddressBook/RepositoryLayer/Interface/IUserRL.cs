@@ -10,9 +10,9 @@ namespace RepositoryLayer.Interface
         public UserModel userRegistration(UserModel userRegister);
         public string UserLogin(UserLoginModel userLogin);
         public string ForgotPassword(string Email);
-        public bool ResetPassword(string Email, ResetModel resetModel); 
-        public string EncryptPassword(string password);
-        public string Decrypt(string base64EncodedData);
+        public bool ResetPassword(string password, string confirmPassword);
+        public string Encrypt(string password);
+        public string Decrypt(string base64EncodeData);
 
     }
 }

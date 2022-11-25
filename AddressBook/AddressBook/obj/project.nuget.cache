@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VmeB/KHoOvHfvITco8lMldFGuxG/qjPTEXAZo0uo4I0a9FFvOxU02Oc8ZZHhtwGL+ftejHmmi3dWwS9VOENTmA==",
+  "dgSpecHash": "cnYIWeufEgB3OujAZ5p7H7I8eab39bd2NWqEfkyc1ymQKDJ24+6KSOwXHsrqQY9NABip0YK0L2IJC1HByh7txg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Madhu\\Desktop\\CFP-193\\Practice\\AddressBook\\AddressBook\\AddressBook.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,9 @@
     "C:\\Users\\Madhu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Madhu\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Madhu\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\Madhu\\.nuget\\packages\\nlog\\5.0.5\\nlog.5.0.5.nupkg.sha512",
+    "C:\\Users\\Madhu\\.nuget\\packages\\nlog.extensions.logging\\5.1.0\\nlog.extensions.logging.5.1.0.nupkg.sha512",
+    "C:\\Users\\Madhu\\.nuget\\packages\\nlog.web.aspnetcore\\5.1.5\\nlog.web.aspnetcore.5.1.5.nupkg.sha512",
     "C:\\Users\\Madhu\\.nuget\\packages\\pipelines.sockets.unofficial\\2.0.17\\pipelines.sockets.unofficial.2.0.17.nupkg.sha512",
     "C:\\Users\\Madhu\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Madhu\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

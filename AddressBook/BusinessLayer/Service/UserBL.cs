@@ -25,7 +25,6 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
-
         public string UserLogin(UserLoginModel userLogin)
         {
             try
@@ -48,15 +47,16 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
-        public bool ResetPassword(string Email,ResetModel resetModel)
+        public bool ResetPassword(string password, string confirmPassword)
         {
             try
             {
-                return userRL.ResetPassword(Email, resetModel);
+                return userRL.ResetPassword(password, confirmPassword);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+
+                throw ex;
             }
         }
     }
