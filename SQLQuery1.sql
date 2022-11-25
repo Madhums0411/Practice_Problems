@@ -86,8 +86,8 @@ begin
 insert into UserTable values(@FirstName,@LastName,@Email,@Password)
 end
 
-alter procedure Userlogin(
-@Email varchar(100)
+alter procedure (
+@Email varchar(100)Userlogin
 )
 as
 begin
@@ -101,4 +101,13 @@ create procedure ForgotPassword(
 as
 begin
 select * from UserTable where Email=@Email;
+end
+
+create procedure SpResetPassword(
+@Email varchar(255),
+@Password varchar(255)
+)
+as
+begin
+update UserTable set Password=@Password where Email=@Email
 end
