@@ -1,0 +1,6 @@
+C:\Users\Madhu\Desktop\CFP-193\Practice\RabbitMessege\RabbitMessage\RabbitMessage\obj\Debug\netcoreapp3.1\RabbitMessage.csproj.AssemblyReference.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\RabbitMessege\RabbitMessage\RabbitMessage\obj\Debug\netcoreapp3.1\RabbitMessage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Madhu\Desktop\CFP-193\Practice\RabbitMessege\RabbitMessage\RabbitMessage\obj\Debug\netcoreapp3.1\RabbitMessage.AssemblyInfoInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\RabbitMessege\RabbitMessage\RabbitMessage\obj\Debug\netcoreapp3.1\RabbitMessage.AssemblyInfo.cs
+C:\Users\Madhu\Desktop\CFP-193\Practice\RabbitMessege\RabbitMessage\RabbitMessage\obj\Debug\netcoreapp3.1\RabbitMessage.csproj.CoreCompileInputs.cache
+C:\Users\Madhu\Desktop\CFP-193\Practice\RabbitMessege\RabbitMessage\RabbitMessage\obj\Debug\netcoreapp3.1\RabbitMessage.MvcApplicationPartsAssemblyInfo.cache

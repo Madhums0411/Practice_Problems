@@ -118,6 +118,44 @@ namespace RepositoryLayer.Service
                 throw ex;
             }
         }
+        public string ForgotPassword(string Email)
+        {
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            try
+            {
+                long Id = 0;
+                SqlCommand cmd = new SqlCommand("Userlogin", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Email", Email);
+                connection.Open();
+                var result = cmd.ExecuteNonQuery();
+                SqlDataReader sqlData = cmd.ExecuteReader();
+                //ForgetPasswordModel forgetPass = new ForgetPasswordModel();
+                UserModel userModel = new UserModel();
+                if (sqlData.Read())
+                {
+                    //userModel.Id = sqlData.GetInt32("Id");
+                    userModel.Email = sqlData.GetString("Email");
+                    userModel.FirstName = sqlData.GetString("FirstName");
+                    userModel.LastName = sqlData.GetString("LastName");
+                }
+                if (userModel.Email != null)
+                {
+                    MSMQModel mSMQModel = new MSMQModel();
+                    var token = GenerateJWTToken(Email, Id);
+                    mSMQModel.sendData2Queue(token);
+                    return token.ToString();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
     }
 }

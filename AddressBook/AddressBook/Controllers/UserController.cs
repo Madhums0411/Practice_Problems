@@ -56,6 +56,26 @@ namespace AddressBook.Controllers
                 throw;
             }
         }
+        [HttpPost("Forgot")]
+        public IActionResult ForgotPassword(string Email)
+        {
+            try
+            {
+                var result = userBL.ForgotPassword(Email);
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "sent successfully", data = result });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "failed" });
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 
 }

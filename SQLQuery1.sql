@@ -93,3 +93,12 @@ as
 begin
 select * from UserTable where Email=@Email;
 end
+
+
+create procedure ForgotPassword(
+@Email varchar(100)
+)
+as
+begin
+select * from UserTable where Email=@Email;
+end
