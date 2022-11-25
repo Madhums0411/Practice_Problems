@@ -11,6 +11,7 @@ namespace AddressBook.Controllers
     public class UserController : ControllerBase
     {
         public IUserBL userBL;
+
         public UserController(IUserBL userBL)
         {
             this.userBL = userBL;
@@ -64,11 +65,31 @@ namespace AddressBook.Controllers
                 var result = userBL.ForgotPassword(Email);
                 if (result != null)
                 {
-                    return Ok(new { success = true, message = "sent successfully", data = result });
+                    return Ok(new { success = true, message = "Sent successfully", data = result });
                 }
                 else
                 {
-                    return BadRequest(new { success = false, message = "failed" });
+                    return BadRequest(new { success = false, message = "Unsuccessfull" });
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpPost("Reset")]
+        public IActionResult ResetPassword(string Email,ResetModel resetModel)
+        {
+            try
+            {
+                var result = userBL.ResetPassword(Email, resetModel);
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "Password reseted successfully"});
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "Unsuccessfull" });
                 }
             }
             catch (Exception)
